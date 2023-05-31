@@ -2,7 +2,7 @@
 
 
 #define EI_NIDENT 16
-#define ELFMAG "\177ELF"
+#define ELFMAG "\177ELF"    // 4个字节，其中\177是0x7f的八进制数
 
 #define EM_RISCV 243
 

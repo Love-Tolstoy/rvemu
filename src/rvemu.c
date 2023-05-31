@@ -7,5 +7,7 @@ int main(int argc, char *argv[]){
     machine_t machine = {0};
     machine_load_program(&machine, argv[1]);  // 不传第0个是因为第0个事可执行文件本身
     printf("entry: %lx\n", machine.mmu.entry);
+
+    printf("entry: %llx\n", TO_HOST(machine.mmu.entry));
     return 0;
 }
