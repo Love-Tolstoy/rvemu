@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "rvemu.h": "c"
+        "rvemu.h": "c",
+        "elfdef.h": "c"
     }
 }

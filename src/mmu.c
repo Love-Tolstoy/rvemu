@@ -1,7 +1,7 @@
 #include "rvemu.h"
 
 static void load_phdr(elf64_phdr_t *phdr, elf64_ehdr_t *ehdr, i64 i, FILE *file) {
-    if (fseek(file, ehdr->e_phentsize * i,SEEK_SET) != 0) {
+    if (fseek(file, ehdr->e_phoff + ehdr->e_phentsize * i,SEEK_SET) != 0) {
         fatal("seek file failed");
     }
 
